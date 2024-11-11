@@ -9,7 +9,8 @@ import Foundation
 import CoreImage
 import DotLottiePlayer
 
-class Player: ObservableObject {
+@available(iOS 15.4, macOS 12.0, *)
+public class Player: ObservableObject {
     @Published public var playerState: PlayerState = .initial
 
     internal lazy var dotLottieObserver: DotLottieObserver? = DotLottieObserver(self)
@@ -18,7 +19,7 @@ class Player: ObservableObject {
     private var WIDTH: UInt32 = 512
     private var HEIGHT: UInt32 = 512
     
-    init(config: Config) {
+    public init(config: Config) {
         self.dotLottiePlayer = DotLottiePlayer(config: config)
     }
     

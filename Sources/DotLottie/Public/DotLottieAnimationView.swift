@@ -15,6 +15,7 @@ import CoreImage
 import AVFoundation
 import Combine
 
+@available(iOS 15.4, macOS 12.0, *)
 public class DotLottieAnimationView: UIView, DotLottie {
     private var mtkView: MTKView!
     private var coordinator: Coordinator!

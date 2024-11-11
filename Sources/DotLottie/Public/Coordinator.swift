@@ -9,6 +9,7 @@ import Foundation
 import MetalKit
 import AVFoundation
 
+@available(iOS 15.4, macOS 12.0, *)
 public class Coordinator : NSObject, MTKViewDelegate {
     private var parent: DotLottie
     private var ciContext: CIContext!

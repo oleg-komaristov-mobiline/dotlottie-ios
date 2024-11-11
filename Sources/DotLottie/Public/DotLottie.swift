@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 15.4, macOS 12.0, *)
 protocol DotLottie {
     var dotLottieViewModel: DotLottieAnimation { get set }
 }

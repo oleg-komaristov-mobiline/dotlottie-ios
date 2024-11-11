@@ -12,6 +12,8 @@ import CoreImage
 import SwiftUI
 
 // View for SwiftUI and MacOS
+
+@available(iOS 15.4, macOS 12.0, *)
 public struct DotLottieView: ViewRepresentable, DotLottie {
     public typealias UIViewType = MTKView
     private var mtkView: MTKView = MTKView()

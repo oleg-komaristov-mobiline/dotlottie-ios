@@ -9,6 +9,8 @@ import Foundation
 import CoreImage
 
 // MARK: DotLottieAnimation
+
+@available(iOS 15.4, macOS 12.0, *)
 public final class DotLottieAnimation: ObservableObject {
     @Published public var framerate: Int = 30
     
