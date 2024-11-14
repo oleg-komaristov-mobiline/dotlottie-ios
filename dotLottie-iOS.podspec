@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "dotLottie-iOS"
-  spec.version      = "0.6.2"
+  spec.version      = "0.6.3"
   spec.summary      = "iOS player for .lottie and .json files."
 
   # This description is used to generate tags and improve search results.
@@ -28,8 +28,8 @@ Pod::Spec.new do |spec|
 Currently this package supports a mimimum iOS version of 15.4+ for iPhone and iPad. MacOS is supported for versions 12.0 and upwards.
                    DESC
 
-  spec.homepage     = "https://github.com/LottieFiles/dotlottie-ios"
-  spec.source       = { :git => "https://github.com/LottieFiles/dotlottie-ios.git", :tag => "#{spec.version}" }
+  spec.homepage     = "https://github.com/oleg-komaristov-mobiline/dotlottie-ios"
+  spec.source       = { :git => "https://github.com/oleg-komaristov-mobiline/dotlottie-ios", :tag => "v#{spec.version}" }
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.authors            = {
     "Sam Osborne" => "sam@lottiefiles.com",
@@ -42,7 +42,8 @@ Currently this package supports a mimimum iOS version of 15.4+ for iPhone and iP
 
   #  When using multiple platforms
   spec.swift_version = '5.0'
-  spec.ios.deployment_target = "15.4"
+
+  spec.ios.deployment_target = "13.0"
   spec.osx.deployment_target = "12.0"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
